@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Replace with the desired font */
+}
+
+.clock {
+  width: 470px;
+  height: 470px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: relative;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.complication {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px; /* Adjust the font size as needed */
+  text-align: center;
+}
+
+.complication-text {
+  font-size: 16px; /* Adjust the font size as needed */
+  margin-top: 10px;
+}
+
+.cycle-button {
+  position: absolute;
+  top: 20px;
+}
+
+.complication1 {
+  top: 41%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+}
+
+.complication2 {
+  top: 41%;
+  right: 44%;
+  transform: translate(50%, -50%);
+}
+
+.complication3 {
+  bottom: 41%;
+  left: 44%;
+  transform: translate(-50%, 50%);
+}
+
+.complication4 {
+  bottom: 41%;
+  right: 44%;
+  transform: translate(50%, 50%);
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+.hour-hand {
+  width: 8px;
+  height: 120px;
+  margin-left: -4px;
+  margin-top: -160px;
+  transform-origin: center bottom;
+}
+
+.minute-hand {
+  width: 6px;
+  height: 150px;
+  margin-left: -3px;
+  margin-top: -175px;
+}
+
+.second-hand {
+  width: 2px;
+  height: 160px;
+  margin-left: -1px;
+  margin-top: -180px;
+}
+
+.cycle-button {
+  margin-top: 20px;
+}
